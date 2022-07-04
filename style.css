@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0px;
+}
+@font-face {
+    font-family:Poppins-Bold ;
+    src: url(Poppins/Poppins-Bold.ttf);
+}
+@font-face {
+    font-family:Poppins-Medium ;
+    src: url(Poppins/Poppins-Medium.ttf);
+}
+@font-face {
+    font-family:Poppins-Regular ;
+    src: url(Poppins/Poppins-Regular.ttf);
+}
+
+
+body {
+    background-image: url(./img.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family:Poppins-Medium ;
+
+}
+
+.main{
+    display: flex;
+}
+.main .Day{
+    background-color: #ffffff42;
+    backdrop-filter: blur(15px);
+    margin: 10px;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+h1{
+    text-align: center;
+    color: white;
+    font-size: 42px;
+    margin: 50px;
+}
+
+h2,h3 {
+    font-size: 18px;
+    margin-top: 20px;
+    line-height: 28px;
+    color: #fff;
+    font-family:Poppins-Regular ;
+    text-align: center;
+    
+}
+.Day a {
+    text-align: center;
+    font-size: 24px;
+    color: #f1c40f;
+    font-weight: bold;
+    font-family:Poppins-Bold ;
+}
+a{
+    text-decoration: none;
+}
+
+
+@media screen and (max-width:600px) {
+    .main{
+        flex-direction: column;
+    }
+    .main .Day{
+        margin: 20px auto;
+    }
+    
+}
